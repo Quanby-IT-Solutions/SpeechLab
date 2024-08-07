@@ -12,7 +12,9 @@ import { AssesmentCategoryComponent } from './features/student-layout/class-lab/
 import { VideoConferenceComponent } from './features/student-layout/meet/video-conference.component';
 import { TeacherSpeechLabComponent } from './features/teacher-layout/teacher-speech-lab/teacher-speech-lab.component';
 import { TeacherLayoutComponent } from './features/teacher-layout/teacher-layout.component';
-
+import { TeacherSelectionComponent } from './features/teacher-layout/teacher-selection/teacher-selection.component';
+import { TeacherAutoComponent } from './features/teacher-layout/teacher-auto/teacher-auto.component';
+import { TeacherManualComponent } from './features/teacher-layout/teacher-manual/teacher-manual.component';
 export const routes: Routes = [
     {
         path: '',
@@ -39,6 +41,9 @@ export const routes: Routes = [
         path: 'teacher', component: TeacherLayoutComponent,
         children: [
             { path: 'speechlab',component: TeacherSpeechLabComponent},
+            { path: 'teacher-selection', component: TeacherSelectionComponent },
+            { path: 'teacher-auto', component: TeacherAutoComponent },
+            { path: 'teacher-manual', component: TeacherManualComponent },
         ]
     }
 ];
